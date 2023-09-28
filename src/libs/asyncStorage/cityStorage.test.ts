@@ -16,8 +16,6 @@ describe("Storage: cityStorage", () => {
   });
 
   it("should be return city storage", async () => {
-
-
     await saveStorageCity(newCity);
     const response = await getStorageCity();
 
