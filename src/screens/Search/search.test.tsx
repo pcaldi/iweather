@@ -13,7 +13,8 @@ describe('Screen: Search', () => {
     const searchInput = screen.getByTestId('search-input');
     fireEvent.changeText(searchInput, 'Curitiba');
 
-    const option = await waitFor(() => screen.findByText(/curitiba/i));
+    const option = await waitFor(() => screen.findByText(/Curitiba/i));
+
     expect(option).toBeTruthy();
   })
 })
