@@ -1,9 +1,9 @@
-import { Dashboard } from "@screens/Dashboard";
-import { api } from "@services/api"
-import { saveStorageCity } from "@libs/asyncStorage/cityStorage";
 import { act, fireEvent, render, screen, waitFor, waitForElementToBeRemoved } from "@__tests__/utils/customRender";
 import { mockWeatherAPIResponse } from "@__tests__/mocks/api/mockWeatherAPIResponse"
 import { mockCityAPIResponse } from "@__tests__/mocks/api/mockCityAPIResponse";
+import { saveStorageCity } from "@libs/asyncStorage/cityStorage";
+import { Dashboard } from "@screens/Dashboard";
+import { api } from "@services/api"
 
 describe("Screen: Dashboard", () => {
 
