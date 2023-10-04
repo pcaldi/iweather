@@ -7,6 +7,7 @@ import { mockCityAPIResponse } from "@__tests__/mocks/api/mockCityAPIResponse";
 
 describe("Screen: Dashboard", () => {
 
+  // Defino com o beforeAll, o que vai ser executado antes dos testes.
   beforeAll(async () => {
     const city = {
       id: '1',
@@ -45,6 +46,7 @@ describe("Screen: Dashboard", () => {
 
     render(<Dashboard />)
 
+    // Remover o Loading do componente.
     await waitForElementToBeRemoved(() => screen.queryByTestId("loading"));
 
 
